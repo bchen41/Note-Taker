@@ -24,4 +24,14 @@ apiRouter.post("/notes", (req, res) => {
   }
 });
 
+apiRouter.delete("/notes/:id", (req, res) => {
+  let id = req.params.id;
+  const filteredNotes = db.filter((notes) => notes.id !== id);
+  fs.writeFileSync(
+    path.join(__dirname, "../db/db.json"),
+    JSON.stringify(filteredNotes)
+  );
+  res.send(`${req.method} Note Deleted`);
+});
+
 module.exports = apiRouter;
