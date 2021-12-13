@@ -14,11 +14,15 @@ npm install express
 
 npm install uuid
 
-### Screenshots of Project
+## Screenshots of Project
 
 <img src="./public/assets/images/note-homepage.png" alt="Screenshot of Note Taker Homepage"/>
 
 <img src="./public/assets/images/note-taker.png" alt="Screenshot of Note Taker"/>
+
+## Heroku Deployed Page
+
+Click [here](https://easy-notetaker.herokuapp.com/)!
 
 ## License
 
